@@ -1,0 +1,13 @@
+package cn.itcast06;
+
+public class Demo {
+	public static void main(String[] args) {
+		Integer_1();
+	}
+	
+	//Integer Р§зг
+	public static void Integer_1() {
+		int i = Integer.parseInt("123231");
+		System.out.println(i/2); 
+	}
+}

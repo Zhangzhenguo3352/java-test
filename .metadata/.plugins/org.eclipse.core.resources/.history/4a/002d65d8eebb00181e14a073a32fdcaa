@@ -1,0 +1,6 @@
+package cn.itcasr04;
+
+public class fn {
+	private String name;
+	private int age;
+}

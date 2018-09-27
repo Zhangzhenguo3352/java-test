@@ -1,0 +1,5 @@
+package cn.itcasr04;
+
+public class TestToString {
+	Person p = new Person("");
+}

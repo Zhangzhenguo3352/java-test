@@ -1,0 +1,17 @@
+package cn.itcast01;
+
+	import static java.lang.System.out; // 增末尾必须是一个 静态成员变量
+public class test {
+	public static void main(String[] args) {
+		int sum = getSum(12,3);
+		System.out.println(sum);
+	}
+	// ... 可变参数 的使用例子
+	public static int getSum(int ...arg) {
+		int sum = 0;
+		for(int n : arg) {
+			sum = sum+n;
+		}
+		return sum;
+	}
+}

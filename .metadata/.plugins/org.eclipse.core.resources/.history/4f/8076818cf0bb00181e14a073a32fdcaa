@@ -1,0 +1,13 @@
+package cn.itcasr04;
+
+public class fn {
+	private String name;
+	private int age;
+	
+	public fn() {}
+	public fn(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+}

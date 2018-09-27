@@ -1,0 +1,13 @@
+package cn.itcasr04;
+
+
+import java.util.Random;
+public class test {
+
+	public static void main(String[] args) {
+		fn f = new fn();
+		Random r = new Random();
+		System.out.println(r);
+	}
+
+}

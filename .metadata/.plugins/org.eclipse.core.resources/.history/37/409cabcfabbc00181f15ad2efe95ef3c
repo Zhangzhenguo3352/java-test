@@ -1,0 +1,12 @@
+package cn.itcast04;
+
+public class test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+	}
+
+}

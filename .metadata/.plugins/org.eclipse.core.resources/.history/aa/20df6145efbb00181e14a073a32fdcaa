@@ -1,0 +1,8 @@
+package cn.itcasr04;
+
+public class tostring {
+	this.name = name
+	public String toString() {
+		return name;
+	}
+}

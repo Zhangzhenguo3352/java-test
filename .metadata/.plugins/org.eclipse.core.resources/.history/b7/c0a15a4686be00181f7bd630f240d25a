@@ -1,0 +1,34 @@
+package cn.itcast07;
+
+import java.util.ArrayList;
+
+public class test {
+	public static void main(String[] args) {
+		ArrayList_2();
+		
+	}
+	
+	// 普通的 ArrayList 使用
+	public static void ArrayList_1() {
+		ArrayList<Integer>  list = new ArrayList<Integer>();
+		list.add(111);
+		list.add(222);
+		list.add(333);
+		list.add(444);
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+	}
+	// 存储对象的 ArrayList
+	public static void ArrayList_2() {
+		ArrayList<person>  arrayPer = new ArrayList<person>();
+		arrayPer.add(new person("张振国1", 12));
+		arrayPer.add(new person("张振国2", 13));
+		arrayPer.add(new person("张振国3", 14));
+		arrayPer.add(new person("张振国4", 15));
+		for (int i = 0; i < arrayPer.size(); i++) {
+			// 重写了 toString()  子类 的方法
+			System.out.println(arrayPer.get(i));
+		}
+	}
+}

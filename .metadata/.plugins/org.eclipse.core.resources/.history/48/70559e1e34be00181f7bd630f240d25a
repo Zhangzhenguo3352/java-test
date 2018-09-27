@@ -1,0 +1,19 @@
+package cn.itcast06;
+
+public class Demo {
+	public static void main(String[] args) {
+		showString();
+	}
+	// 基本数据类型  变成 字符串
+	public static void showString() {
+		int a = 10;
+		String b = a+"";
+		System.out.println(b);
+	}
+	
+	//Integer.praseInt() 例子
+	public static void Integer_1() {
+		int i = Integer.parseInt("123231");
+		System.out.println(i/2);  // 61615
+	}
+}

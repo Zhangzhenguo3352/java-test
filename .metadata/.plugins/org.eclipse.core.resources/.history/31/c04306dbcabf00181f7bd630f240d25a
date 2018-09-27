@@ -1,0 +1,96 @@
+package cn.itcast09;
+
+	import java.util.ArrayList;
+
+	import java.util.Iterator;
+	import java.util.LinkedHashSet;
+	import java.util.Map;
+	import java.util.HashMap;
+
+public class test {
+	public static void main(String[] args) {
+		
+		hashMap_1();
+	}
+	// hashMap() 
+	public static void hashMap_1() {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("a", "1");
+		map.put("b", "2");
+		map.put("b", "2");
+		map.put("c", "3");
+		
+		System.out.println(map);  // {b=2, c=3, a=1}
+		
+	}
+	//LinkedHashSet 是基于 hashSet 实现的。它具有顺序行
+	public static void LinkedHashSet_1() {
+		LinkedHashSet<String> link = new LinkedHashSet<String>();
+		link.add("aa");
+		link.add("bb");
+		link.add("cc");
+		link.add("cc");
+		link.add("cc");
+		link.add("cc");
+		link.add("dd");
+		System.out.println(link.hashCode()); // 12608
+	}
+	
+	// Iterator 迭代器 并发修改异常
+	public static void iterator_2() {
+		ArrayList<String> str = new ArrayList<String>();
+		str.add("aa");
+		str.add("bb");
+		str.add("cc");
+		str.add("dd");
+		str.isEmpty()
+		Iterator<String> it = str.iterator();
+		while(it.hasNext()) {
+			String s = it.next();
+			if(s.equals("bb")) {
+				str.add("BB"); // java.util.ConcurrentModificationException
+			}
+			System.out.println(s);
+		}
+	}
+	
+	// set(int index, "修改成的元素")
+	public static void set_1() {
+		ArrayList<String> str = new ArrayList<String>();
+		str.add("aa");
+		str.add("bb");
+		str.add("cc");
+		str.add("dd");
+
+		System.out.println(str); // [aa, bb, cc, dd]
+		str.set(1, "11");
+		System.out.println(str); // [aa, 11, cc, dd]
+	}
+	// remove(int index)
+	public static void remove_1() {
+		ArrayList<String> str = new ArrayList<String>();
+		
+		str.add("aa");
+		str.add("bb");
+		str.add("cc");
+		str.add("dd");
+		
+		System.out.println(str);  // [aa, bb, cc, dd]
+		str.remove(1);  // 返回值是 删除的指定元素
+		System.out.println(str); // [aa, cc, dd]  删除完毕的 元素集合
+	}
+	public static void add_1() {
+		ArrayList<String> str = new ArrayList<String>();
+		
+		str.add("aa");
+		str.add("bb");
+		str.add("cc");
+		str.add("dd");
+		
+		System.out.println(str); // [aa, bb, cc, dd]
+		str.add(1, "11");
+		System.out.println(str); // [aa, 11, bb, cc, dd]
+		System.out.println(str.get(3)); // cc
+		
+	}
+}

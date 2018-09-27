@@ -1,0 +1,36 @@
+package cn.itcast08;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class test {
+	public static void main(String[] args) {
+		ArrayList<String> str = new ArrayList<String>();
+		HashSet<Integer> in = new HashSet<Integer>();
+		
+		str.add("aa");
+		str.add("bb");
+		
+		in.add(11);
+		in.add(22);
+		
+		iterator(str);
+		iterator(in);
+	}
+
+	private static void iterator(Collection<?> coll) {
+		Iterator<?> it = coll.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+			//aa
+			//bb
+			//22
+			//11
+		}
+		
+	}
+	
+	
+}

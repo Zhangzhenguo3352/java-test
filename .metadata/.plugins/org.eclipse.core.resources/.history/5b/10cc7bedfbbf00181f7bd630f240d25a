@@ -1,0 +1,16 @@
+package cn.itcast01;
+
+	import static java.lang.System.out; // 增末尾必须是一个 静态成员变量
+public class test {
+	public static void main(String[] args) {
+		// System.out.println("aaa");
+		          out.println("aaa");  // JDK 1.5新特性, 少写了代码
+	}
+	public static void getSum(int ...arg) {
+		int sum = 0;
+		for(int n : arg) {
+			sum = sum+n;
+		}
+		System.out.println();
+	}
+}

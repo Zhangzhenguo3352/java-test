@@ -1,0 +1,9 @@
+package cn.itcast01;
+
+import static java.lang.System.out;
+public class test {
+	public static void main(String[] args) {
+		out.prinln("aaa");
+	}
+	
+}

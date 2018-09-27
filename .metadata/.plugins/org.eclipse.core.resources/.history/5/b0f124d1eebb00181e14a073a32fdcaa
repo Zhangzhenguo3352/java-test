@@ -1,0 +1,6 @@
+package cn.itcasr04;
+
+public class fn {
+	public abstract name = name;
+	public abstract age = age;
+}

@@ -1,0 +1,7 @@
+package cn.itcast07;
+
+public class person {
+	private String name = "zhang";
+	private int age = 24;
+	
+}

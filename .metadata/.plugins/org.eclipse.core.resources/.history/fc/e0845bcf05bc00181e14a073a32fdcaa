@@ -1,0 +1,22 @@
+package cn.itcasr04;
+
+
+import java.util.Random;
+import java.util.Scanner;
+public class TestEquals {
+
+	public static void main(String[] args) {
+		Person p = new Person("уехЩ", 23);
+		System.out.println(p);
+		System.out.println(p.toString());
+		
+		Random r = new Random();
+		System.out.println(r);
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println(sc);
+		String sss = "abcdefg";
+		System.out.println(sss.substring(1, 5));
+		
+	}
+}

@@ -1,0 +1,16 @@
+package cn.itcasr04;
+
+
+import java.util.Random;
+public class TestEquals {
+
+	public static void main(String[] args) {
+		Person p = new Person("уехЩ", 23);
+		System.out.println(p);
+		System.out.println(p.toString());
+		
+		Random r = new Random();
+		System.out.println(r);
+		
+	}
+}

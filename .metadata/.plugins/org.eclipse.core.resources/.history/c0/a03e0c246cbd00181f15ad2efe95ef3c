@@ -1,0 +1,52 @@
+package cn.itcast05;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class dateDemo {
+	public static void main(String[] args) throws ParseException {
+		
+		Canlender_1();
+		
+	}
+	
+	// Canlender 
+	public static void Canlender_1() {
+		Calendar can = Calendar.getInstance();
+		int year = can.get(Calendar.YEAR);
+		int time = can.get(Calendar.ZONE_OFFSET);
+		System.out.println(year);
+	}
+	// "2012-01-02"    =>    Thu Jan 01 08:00:00 CST 1970
+	public static void simpleDateFormat_2() throws ParseException {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/HH:mm:ss");
+		Date date = sdf.parse("2010/02/3/11:11:11");
+		System.out.println(date);
+	}
+	
+	// simpleDateFormat
+	// "Thu Jan 01 08:00:00 CST 1970"   =>     "2012-01-02"
+	public static void simpleDateFormat_1() {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日HH点mm分钟ss秒");
+		String date = sdf.format(new Date());
+		System.out.println(date);
+	}
+	
+	public static void time_1() {
+		long time = System.currentTimeMillis();
+		System.out.println(time);
+//		Date date = new Date();
+//		Date date = new Date(0);
+		Date date = new Date();
+		long time2 = date.getTime();
+		System.out.println(time2);
+	}
+	public static void time_2() {
+		Date date = new Date();
+        System.out.println(date); 
+        date.setTime(0);
+        System.out.println(date);
+	}
+}

@@ -1,0 +1,24 @@
+package cn.itcast07;
+
+import java.util.ArrayList;
+
+public class test {
+	public static void main(String[] args) {
+//		ArrayList<person>  arrayPer = new ArrayList<person>();
+//		arrayPer.add(new person("张振国1", 12));
+//		arrayPer.add(new person("张振国2", 13));
+//		arrayPer.add(new person("张振国3", 14));
+//		arrayPer.add(new person("张振国4", 15));
+//		for (int i = 0; i < arrayPer.size(); i++) {
+//			System.out.println(arrayPer.get(i));
+//		}
+		ArrayList<Integer>  list = new ArrayList<Integer>();
+		list.add(111);
+		list.add(222);
+		list.add(333);
+		list.add(444);
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+	}
+}

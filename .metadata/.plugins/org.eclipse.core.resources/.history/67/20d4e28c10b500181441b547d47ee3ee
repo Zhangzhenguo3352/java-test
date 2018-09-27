@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class demo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ArrayList array = new ArrayList();
+		int[] arr = { 1, 2, 3, 4 };
+	}
+
+}

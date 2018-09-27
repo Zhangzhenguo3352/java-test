@@ -1,0 +1,11 @@
+package cn.itcast02;
+
+public class test {
+	public static void main(String[] args) {
+		
+	}
+	// 实现 斗地主
+	public static void game_1() {
+		
+	}
+}

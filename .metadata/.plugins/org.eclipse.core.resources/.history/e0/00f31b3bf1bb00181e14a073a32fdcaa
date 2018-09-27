@@ -1,0 +1,8 @@
+package cn.itcasr04;
+
+
+import java.util.Random;
+public class TestEquals {
+
+	
+}

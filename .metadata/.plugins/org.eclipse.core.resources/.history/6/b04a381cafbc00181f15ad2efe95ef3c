@@ -1,0 +1,28 @@
+package cn.itcast04;
+
+public class test {
+
+	/**
+	 * @param args
+	 * split Á·Ï°
+	 */
+	public static void main(String[] args) {
+		split_2();
+	}
+	
+	public static void split_2() {
+		String str = "12      13 15     16";
+		String[] strArr = str.split(" +");
+		for(int i = 0; i < strArr.length; i++) {
+			System.out.println(strArr[i]);
+		}
+	}
+	public static void split_1() {
+		String str = "12-13-15-16";
+		String[] strArr = str.split("-");
+		for(int i = 0; i < strArr.length; i++) {
+			System.out.println(strArr[i]);
+		}
+	}
+
+}

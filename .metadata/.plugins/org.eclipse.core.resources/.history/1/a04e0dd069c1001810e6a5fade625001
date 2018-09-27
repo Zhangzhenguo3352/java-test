@@ -1,0 +1,17 @@
+package cn.itcast02;
+
+import java.util.HashMap;
+
+public class test {
+	public static void main(String[] args) {
+		
+	}
+	// 实现 斗地主
+	public static void game_1() {
+		// 创建Map 集合，键是编号，值是牌
+		HashMap<Integer, String> pooker = new HashMap<Integer, String>();
+		// 创建 List 集合，存储编号
+		ArrayList<Integer> pookerNumber = new ArrayList<Integer>();
+		
+	}
+}

@@ -1,0 +1,53 @@
+package cn.itcast06;
+
+public class Demo {
+	public static void main(String[] args) {
+		function();
+		
+	}
+	public static void function() {
+	    int[] src = {11,22,33,44,55};
+	    int[] desc = {77,03,23,45};
+	    System.arraycopy(src, 1, desc, 1, 2);
+	    for(int i = 0; i < desc.length; i++) {
+	        System.out.println(desc[i]);
+	    }
+	    // 
+	}
+	// System.currentTimeMillis() 的到 程序执行需要多长时间
+	public static void test_2() {
+		long start = System.currentTimeMillis();
+		
+		for(long i = 0; i < 1000; i++) {
+			System.out.println(i);
+		}
+		long end = System.currentTimeMillis();
+		System.out.println(end - start);
+	}
+	
+	// Integer 例子
+	public static void test_1(){
+		Integer i = 127;
+		Integer j = 127;
+		System.out.println(i == j);
+		System.out.println(i.equals(j));
+	}
+	// i--  的输出值
+	public static void iNmber() {
+		int i = 100;
+		//System.out.println(i--); // 100
+		System.out.println(--i); // 99
+	}
+	// 基本数据类型  变成 字符串
+	public static void showString() {
+		int a = 10;
+		String b = a+"";
+		System.out.println(b);  // 这是字符串 10
+	}
+	
+	//Integer.praseInt() 例子
+	public static void Integer_1() {
+		int i = Integer.parseInt("123231");
+		System.out.println(i/2);  // 61615
+	}
+}
